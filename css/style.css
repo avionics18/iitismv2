@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display:wght@800&display=swap');
-
 :root{
   --main: #003262;
   --main-light: #024f99;
 }
+html, body{
+  font-family: 'Merriweather', serif;
+  line-height: 1.7;
+}
+
+
 
 #logo{
   background: linear-gradient(45deg, rgba(150,0,0,1), rgba(255,0,0,0.6)), url('../imgs/iitism_cover.jpg') no-repeat center;
@@ -63,11 +67,24 @@
 
 
 /* utilities */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
 .ff-playfair{
   font-family: 'Playfair Display', serif;
 }
 .ff-oswald{
   font-family: 'Oswald', sans-serif;
+}
+.ff-merriweather{
+  font-family: 'Merriweather', serif;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-700{
+  font-weight: 700;
 }
 .list-style-none{
   list-style: square;
