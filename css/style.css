@@ -109,11 +109,23 @@
 
 /*Override Bootstrap*/
 .carousel-indicators{
-  bottom: -40px;
+  bottom: -38px;
+}
+.carousel-indicators li{
+  width: 20px;
+  height: 5px;
+  border: none;
+  opacity: 1;
+  background: #ccc;
+  transition: background 0.6s ease;
+}
+.carousel-indicators li.active{
+  background: var(--main);
 }
 .carousel-caption{
   position: static;
-  background-color: var(--secondary);
+  background-color: var(--main);
+  color: rgba(255,255,255,0.6);
   padding: 10px 15px;
   text-align: center;
 }
