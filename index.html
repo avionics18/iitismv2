@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <div id="logo" class="py-3">
     <div class="container">
       <div class="row no-gutters">
@@ -33,7 +34,7 @@
   <div class="bg-main py-md-2">
     <div class="container">
       <div class="text-right">
-        <button id="menu-btn" class="btn btn-danger px-md-4 rounded-md" onclick="menu()">MENU <i class="fa fa-bars"></i></button>
+        <button id="menu-btn" class="btn btn-warning px-md-4 rounded-md" onclick="menu()">MENU <i class="fa fa-bars"></i></button>
       </div>
     </div>
   </div>
@@ -203,6 +204,7 @@
   <section class="py-4">
     <div class="container">
       <div class="row">
+        <!-- Notices, Announcements -->
         <div class="col-md-4 mb-3 order-md-2">
           <div id="notices" class="mb-3 px-4 py-3">
             <h2 class="text-main">
@@ -214,16 +216,17 @@
             <div id="notices-content" class="collapse show">
               <hr>
               <ul>
-                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="badge badge-warning">Updated! - 15 July</span></a></li>
+                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="badge badge-warning">New <i class="fa fa-star"></i></span></a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur.</a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, eius.</a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
               </ul>
               <div class="text-right">
-                <a href="#" class="btn btn-block btn-outline-primary btn-sm">View All <i class="fa fa-long-arrow-right ml-1"></i></a>
+                <a href="#" class="btn btn-block btn-main btn-sm mt-4 mb-3">View All <i class="fa fa-long-arrow-right ml-1"></i></a>
               </div>
             </div> <!-- #notices-content -->
           </div> <!-- #notices -->
+
           <div id="announcements" class="mb-3 px-4 py-3">
             <h2 class="text-main">
               <span class="ff-oswald">Announcements</span>
@@ -243,19 +246,62 @@
                 <li><a href="#" class="link-main">Lorem  sit amet, consectetur adipisicing elit. Id, eum.</a></li>
               </ul>
               <div class="text-right">
-                <a href="#" class="btn btn-block btn-outline-primary btn-sm">View All <i class="fa fa-long-arrow-right ml-1"></i></a>
+                <a href="#" class="btn btn-block btn-main btn-sm mt-4 mb-3">View All <i class="fa fa-long-arrow-right ml-1"></i></a>
               </div>
             </div> <!-- #announcements-content -->
           </div> <!-- #announcements -->
         </div> <!-- /.col-md-4 -->
+
+        <!-- Main Body -->
         <div class="col-md-8 mb-3 order-md-1">
-          <h2 class="text-main ff-oswald">Our History</h2>
-          <hr>
-          <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae pariatur provident suscipit temporibus labore. Porro debitis, officiis corporis adipisci, sit modi eveniet dolorum, quo quam placeat quae sint culpa. Sapiente nemo cumque laborum amet minima.</p>
-          <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos inventore, eos fuga provident optio architecto tempora saepe molestias aut modi rerum error iure ab necessitatibus dolorum dolores maiores, non vitae, aspernatur voluptatum magnam? Dolorem mollitia debitis quibusdam fugit voluptatibus iste perspiciatis, impedit quam exercitationem temporibus corporis sint error iusto non, animi veniam sequi. Consequuntur, aut.</p>
-          <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quis, perspiciatis atque similique alias odio iure quae laboriosam iste quos, cupiditate possimus a ab ullam.</p>
-        </div>
-        <!-- /.col-md-8 -->
+          <!-- Features -->
+          <div class="mb-5">
+            <div class="row">
+              <div class="col-md-3 col-6 mb-3">
+                <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
+                  <p class="mb-2"><i class="fa fa-3x fa-university"></i></p>
+                  <p class="m-0">Academics</p>
+                </button>
+              </div> <!-- col-md-3 -->
+              <div class="col-md-3 col-6 mb-3">
+                <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
+                  <p class="mb-2"><i class="fa fa-3x fa-briefcase"></i></p>
+                  <p class="m-0">Placements</p>
+                </button>
+              </div> <!-- col-md-3 -->
+              <div class="col-md-3 col-6 mb-3">
+                <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
+                  <p class="mb-2"><i class="fa fa-3x fa-grav"></i></p>
+                  <p class="m-0">Student's Life</p>
+                </button>
+              </div> <!-- col-md-3 -->
+              <div class="col-md-3 col-6 mb-3">
+                <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
+                  <p class="mb-2"><i class="fa fa-3x fa-dribbble"></i></p>
+                  <p class="m-0">Sports</p>
+                </button>
+              </div> <!-- col-md-3 -->
+            </div> <!-- form-row -->
+          </div> <!-- features -->
+
+          <!-- History -->
+          <div class="mb-5">
+            <h2 class="text-main ff-oswald">Our History</h2>
+            <hr>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae pariatur provident suscipit temporibus labore. Porro debitis, officiis corporis adipisci, sit modi eveniet dolorum, quo quam placeat quae sint culpa. Sapiente nemo cumque laborum amet minima.</p>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos inventore, eos fuga provident optio architecto tempora saepe molestias aut modi rerum error iure ab necessitatibus dolorum dolores maiores, non vitae, aspernatur voluptatum magnam? Dolorem mollitia debitis quibusdam fugit voluptatibus iste perspiciatis, impedit quam exercitationem temporibus corporis sint error iusto non, animi veniam sequi. Consequuntur, aut.</p>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quis, perspiciatis atque similique alias odio iure quae laboriosam iste quos, cupiditate possimus a ab ullam.</p>
+          </div> <!-- our-history -->
+
+          <!-- News & Events -->
+          <div class="mb-5">
+            <h2 class="text-main ff-oswald">News &amp; Events</h2>
+            <hr>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae pariatur provident suscipit temporibus labore. Porro debitis, officiis corporis adipisci, sit modi eveniet dolorum, quo quam placeat quae sint culpa. Sapiente nemo cumque laborum amet minima.</p>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos inventore, eos fuga provident optio architecto tempora saepe molestias aut modi rerum error iure ab necessitatibus dolorum dolores maiores, non vitae, aspernatur voluptatum magnam? Dolorem mollitia debitis quibusdam fugit voluptatibus iste perspiciatis, impedit quam exercitationem temporibus corporis sint error iusto non, animi veniam sequi. Consequuntur, aut.</p>
+            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quis, perspiciatis atque similique alias odio iure quae laboriosam iste quos, cupiditate possimus a ab ullam.</p>
+          </div> <!-- news and events -->
+        </div> <!-- .col-md-8 main-body -->
       </div> <!-- row -->
     </div> <!-- container -->
   </section>
