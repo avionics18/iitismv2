@@ -5,6 +5,7 @@
 html, body{
   font-family: 'Merriweather', serif;
   line-height: 1.7;
+  background-color: #fff;
 }
 
 
@@ -20,8 +21,12 @@ html, body{
 }
 #logo .logo-heading-md{
   display: block;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 20px;
+}
+#logo .logo-heading-hindi{
+  padding-left: 20px;
+  font-size: 24px;
 }
 #logo .logo-heading-sm{
   display: none;
@@ -31,7 +36,8 @@ html, body{
 #navbar{
   height: 100vh;
   width: 100%;
-  background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url('https://honors.uw.edu/wp-content/uploads/2018/08/Suzzalo_Library_inside.jpg') no-repeat center;
+  background-color: #333333;
+  background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url('../imgs/lib.jpg') no-repeat center;
   background-size: cover;
   overflow: auto;
   position: fixed;
@@ -63,7 +69,7 @@ html, body{
 }
 #notices ul li, #announcements ul li{
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 #news .card img{
@@ -202,19 +208,30 @@ h1, h2, h3, h4, h5, h6{
 
 
 /*Media Queries*/
-@media screen and (max-width: 767.9px){
-
-  html, body{
-    font-size: 0.9rem;
+@media screen and (max-width: 1199.98px){
+  #news .card img{
+    width: 100%;
+    height: 200px;
   }
+}
 
+@media screen and (max-width: 991.98px){
   #logo .logo-heading-sm{
     display: block;
+    padding-left: 20px;
+  }
+  #logo .logo-heading-hindi{
+    font-size: 12px;
   }
   #logo .logo-heading-md{
     display: none;
   }
+}
 
+@media screen and (max-width: 767.9px){
+  html, body{
+    font-size: 0.9rem;
+  }
   .rounded-md{
     border-radius: 0px !important;
   }
@@ -225,10 +242,12 @@ h1, h2, h3, h4, h5, h6{
   .carousel-caption p{
     font-size: 70%;
   }
+}
 
-  #news .card img{
-    width: 100%;
-    height: 200px;
+/*Min Width*/
+@media screen and (min-width: 1200px) {
+  #logo img{
+    padding: 15px;
   }
 }
 

@@ -14,18 +14,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@400;700&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Header -->
   <div id="logo" class="py-3">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-md-2 col-4">
-          <img class="w-100 p-md-3" src="https://www.iitism.ac.in/assets/img/logo.png" alt="iitism logo">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-4">
+          <img class="w-100 pt-lg-3 pt-sm-0 pt-1" src="./imgs/iitism-logo.png" alt="iitism logo">
         </div>
         <!-- /.col-4 -->
-        <div class="col-8">
+        <div class="col-lg-10 col-md-10 col-sm-8 col-8">
           <h1 class="logo-heading-md"><b>Indian Institue of Technology <br>(Indian School of Mines), Dhanbad</b></h1>
-          <h4 class="logo-heading-sm pt-3 ml-2"><b>Indian Institue of Technology <br>(ISM), Dhanbad</b></h4>
+          <h4 class="logo-heading-sm pt-md-3 pt-0"><b>Indian Institue of Technology <br>(ISM), Dhanbad</b></h4>
+          <p class="text-white logo-heading-hindi">भारतीय प्रौद्योगिकी संस्थान (भारतीय खनि विद्यापीठ), धनबाद</p>
         </div>
         <!-- /.col-8 -->
       </div>
@@ -45,7 +45,7 @@
   <div id="navbar" class="fadeIn d-none pt-5 pb-3">
     <div class="container">
       <div class="text-right mb-4">
-        <button class="btn btn-warning px-4" onclick="menu()">CLOSE <i class="fa fa-close"></i></button>
+        <button class="btn btn-warning px-4 shadow" onclick="menu()">CLOSE <i class="fa fa-close"></i></button>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 mb-3">
@@ -162,9 +162,9 @@
   
   
   <!-- carousel -->
-  <div class="container my-5">
+  <div class="container-fluid px-0 mb-5">
     <div class="shadow-sm">
-      <div id="mainCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div id="mainCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators ml-0 mr-0">
           <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#mainCarousel" data-slide-to="1"></li>
@@ -191,11 +191,11 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon d-sm-block d-none" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon d-sm-block d-none" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -207,19 +207,18 @@
     <div class="container">
       <div class="row">
         <!-- Notices, Announcements -->
-        <div class="col-md-4 mb-3 order-md-2">
+        <div class="col-xl-4 col-md-5 mb-3 order-md-2">
           <div id="notices" class="mb-3 px-4 py-3 shadow-sm-dark">
-            <h2 class="text-main">
+            <h2 class="text-main mb-3">
               <span class="ff-oswald">Notices</span>
               <button onclick="rotate90(event, 'Hello')" class="btn btn-main shadow-sm float-right rotate-90" data-target="#notices-content" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-right"></i>
               </button>
             </h2>
             <div id="notices-content" class="collapse show">
-              <hr>
-              <ul>
-                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="badge badge-warning">New <i class="fa fa-star"></i></span></a></li>
-                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur. <span class="badge badge-warning">New <i class="fa fa-star"></i></span></a></li>
+              <ul class="border-top pt-3">
+                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="badge badge-warning">NEW <i class="fa fa-star"></i></span></a></li>
+                <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur. <span class="badge badge-warning">NEW <i class="fa fa-star"></i></span></a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, eius.</a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
               </ul>
@@ -230,15 +229,14 @@
           </div> <!-- #notices -->
 
           <div id="announcements" class="mb-3 px-4 py-3 shadow-sm-dark">
-            <h2 class="text-main">
+            <h2 class="text-main mb-3">
               <span class="ff-oswald">Announcements</span>
               <button onclick="rotate90(event, 'Hello')" class="btn btn-main shadow-sm float-right rotate-90" data-target="#announcements-content" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-right"></i>
               </button>
             </h2>
             <div id="announcements-content" class="collapse show">
-              <hr>
-              <ul>
+              <ul class="border-top pt-3">
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur.</a></li>
                 <li><a href="#" class="link-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, eius.</a></li>
@@ -255,39 +253,39 @@
         </div> <!-- /.col-md-4 -->
 
         <!-- Main Body -->
-        <div class="col-md-8 mb-3 order-md-1">
+        <div class="col-xl-8 col-md-7 mb-3 order-md-1">
           <!-- Features -->
           <div class="mb-5">
             <div class="row">
-              <div class="col-md-3 col-6 mb-3">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-3">
                 <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
                   <p class="mb-2"><i class="fa fa-3x fa-university"></i></p>
                   <p class="m-0">Academics</p>
                 </button>
-              </div> <!-- col-md-3 -->
-              <div class="col-md-3 col-6 mb-3">
+              </div> <!-- col-xl-3 col-lg-4 col-md-6 -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-3">
                 <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
                   <p class="mb-2"><i class="fa fa-3x fa-briefcase"></i></p>
                   <p class="m-0">Placements</p>
                 </button>
-              </div> <!-- col-md-3 -->
-              <div class="col-md-3 col-6 mb-3">
+              </div> <!-- col-xl-3 col-lg-4 col-md-6 -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-3">
                 <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
                   <p class="mb-2"><i class="fa fa-3x fa-grav"></i></p>
                   <p class="m-0">Student's Life</p>
                 </button>
-              </div> <!-- col-md-3 -->
-              <div class="col-md-3 col-6 mb-3">
+              </div> <!-- col-xl-3 col-lg-4 col-md-6 -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-3">
                 <button class="btn btn-block btn-light shadow-sm rounded-lg border-main pt-4 pb-3">
                   <p class="mb-2"><i class="fa fa-3x fa-dribbble"></i></p>
                   <p class="m-0">Sports</p>
                 </button>
-              </div> <!-- col-md-3 -->
+              </div> <!-- col-xl-3 col-lg-4 col-md-6 -->
             </div> <!-- form-row -->
           </div> <!-- features -->
 
           <!-- History -->
-          <div class="mb-5">
+          <div class="mb-5 bg-light shadow-sm p-3 rounded">
             <h2 class="text-main ff-oswald">Our History</h2>
             <hr>
             <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae pariatur provident suscipit temporibus labore. Porro debitis, officiis corporis adipisci, sit modi eveniet dolorum, quo quam placeat quae sint culpa. Sapiente nemo cumque laborum amet minima.</p>
@@ -300,35 +298,44 @@
             <h2 class="text-main ff-oswald">News @ ISM</h2>
             <div class="divider-dark"></div>
             <!-- News posts -->
-            <div class="card flex-md-row shadow mb-3 overflow-hidden rounded-lg">
-              <img class="object-fit-cover" src="imgs/posts/1.jpg" alt="user image">
-              <div class="card-body">
-                <h5>
-                  <a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
-                </h5>
-                <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
-              </div> <!-- card-body -->
-            </div> <!-- card -->
+            <div class="row">
+            	<div class="col-xl-12 col-lg-6 col-md-12 col-sm-6">
+            		<div class="card flex-xl-row shadow mb-3 overflow-hidden rounded-lg">
+            			<img class="object-fit-cover" src="imgs/posts/1.jpg" alt="user image">
+            			<div class="card-body">
+            				<h5>
+            					<a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
+            				</h5>
+            				<p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
+            			</div> <!-- card-body -->
+            		</div> <!-- card -->
+            	</div> <!-- col-xl-12 -->
 
-            <div class="card flex-md-row shadow mb-3 overflow-hidden rounded-lg">
-              <img class="object-fit-cover" src="imgs/posts/2.jpg" alt="user image">
-              <div class="card-body">
-                <h5>
-                  <a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
-                </h5>
-                <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
-              </div> <!-- card-body -->
-            </div> <!-- card -->
+            	<div class="col-xl-12 col-lg-6 col-md-12 col-sm-6">
+            		<div class="card flex-xl-row shadow mb-3 overflow-hidden rounded-lg">
+            			<img class="object-fit-cover" src="imgs/posts/2.jpg" alt="user image">
+            			<div class="card-body">
+            				<h5>
+            					<a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
+            				</h5>
+            				<p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
+            			</div> <!-- card-body -->
+            		</div> <!-- card -->
+            	</div> <!-- col-xl-12 -->
 
-            <div class="card flex-md-row shadow mb-3 overflow-hidden rounded-lg">
-              <img class="object-fit-cover" src="imgs/posts/3.jpg" alt="user image">
-              <div class="card-body">
-                <h5>
-                  <a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
-                </h5>
-                <p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
-              </div> <!-- card-body -->
-            </div> <!-- card -->
+            	<div class="col-xl-12 col-lg-6 col-md-12 col-sm-6">
+            		<div class="card flex-xl-row shadow mb-3 overflow-hidden rounded-lg">
+            			<img class="object-fit-cover" src="imgs/posts/3.jpg" alt="user image">
+            			<div class="card-body">
+            				<h5>
+            					<a href="#" class="link-main">3<sup>rd</sup> year undergrad solves the pandemeic core problems as approved by WHO.</a>
+            				</h5>
+            				<p class="text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt. Deleniti aliquam quod, assumenda repellat voluptas fuga, eveniet minus inventore ullam earum aliquid[...]</p>
+            			</div> <!-- card-body -->
+            		</div> <!-- card -->
+            	</div> <!-- col-xl-12 -->
+
+            </div> <!-- row -->
 
             <p class="text-center">
               <button class="btn btn-main btn-sm px-5 mt-4">View All <i class="fa fa-long-arrow-right ml-1"></i></button>
