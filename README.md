@@ -1,4 +1,4 @@
 # IIT ISM Website
 
 
-The live link of the project  - [IIT ISM WEBSITE V2.0](avionics18.github.io/iitismv2/)
+Designing the front page for IIT ISM Website
